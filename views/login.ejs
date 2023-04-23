@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Log In | Foodies blog</title>
+  </head>
+
+  <body>
+        <%- include('partials/nav.ejs') %>
+        <form action="/login" method="POST">
+            <label for="username">User Name</label>
+            <input name="username" type="text" placeholder="Username" />
+
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="Email" />
+
+            <label for="password">Password</label>            
+            <input name="password" type="password" placeholder="Password" />
+
+            <button>Log In </button>
+
+        </form>
+  </body>
+</html>

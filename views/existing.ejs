@@ -1,0 +1,12 @@
+<head>
+    <title>Foodies blog  - <%= blogData.title%></title>
+  </head>
+
+  <body>
+        <%- include('partials/nav.ejs') %>
+        <h2><%=blogData.title%></h2>
+        <p><%= blogData.content %></p>
+        <p><%= blogData.author %></p>
+        <hr />
+  </body>
+</html>

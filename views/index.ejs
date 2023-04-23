@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Foodies blog</title>
+  </head>
+
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <h1>I love food blog</h1>
+    <ul>
+      <% blogData.forEach(element => { %>
+      <li>
+        <a href="/blog/<%= element.slug%>"><h4><%= element.title %></h4></a>
+        <p><%= element.content %></p>
+        <p><%= element.author %></p>
+        <hr />
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

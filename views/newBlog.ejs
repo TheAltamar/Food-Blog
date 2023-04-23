@@ -1,0 +1,16 @@
+<head>
+    <title>Foodies blog</title>
+  </head>
+
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <h1>New Blog</h1>
+   <form method="POST" action="/newBlog">
+    <input type="text" placeholder="Blog Title" name="title"/>
+    <textarea placeholder="write your entr here" name="content" ></textarea>
+    <input type="text" placeholder="Author" name="author">
+
+    <button type="submit">Submit</button>
+   </form>
+  </body>
+</html>
